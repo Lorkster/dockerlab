@@ -27,6 +27,7 @@ Create a custom Dockerfile based on expertsystems/oracle-jdk8
 * Set the image `WORKDIR` to `VERTICLE_HOME`.
 * Add your entrypoint for the image: `ENTRYPOINT ["sh", "-c"]`.
 * Set the command that starts the fat jar: `CMD ["java -jar $VERTICLE_FILE -ha"]`.
+`CMD` sets the default arguments for the `ENTRYPOINT`
 * Build your new image: `docker build -t dockerlab/db-service-java:part4 .`
 
 ### Start Container from Custom Image
