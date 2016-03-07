@@ -1,0 +1,1 @@
+FROM expertsystems/oracle-jdk8
