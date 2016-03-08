@@ -21,11 +21,11 @@ Create a custom Dockerfile based on mysql:5.7
 * Expose `3306` for future use.
 * `COPY` the sql init script to the entrypoint initdb.
 * If on OSX, `COPY` the needed bash script and `chmod` it, to modify the image entrypoint.
-* Build your new image: `docker build -t dockerlab/mysql:latest .`
+* Build your new image: `docker build -t findout/mysql:latest .`
 
 ### Start Container from Custom Image
 
-* `docker run -p 3306:3306 --name dockerlab-mysql -d dockerlab/mysql:latest .`
+* `docker run -p 3306:3306 --name dockerlab-mysql -d findout/mysql:latest .`
 * `docker ps`
 * Take a look in your container: `docker exec -it dockerlab-mysql bash`
 * Access using your MySQL tool of choice.
@@ -35,6 +35,6 @@ Create a custom Dockerfile based on mysql:5.7
 
 Data will be lost if container is removed. Linking in a volume is one way to solve that.
 
-* `docker run -p 3306:3306 --name dockerlab-mysql -v /path/to/my/data:/var/lib/mysql -d dockerlab/mysql:latest .`
+* `docker run -p 3306:3306 --name dockerlab-mysql -v /path/to/my/data:/var/lib/mysql -d findout/mysql:latest .`
 * Try removing the container and starting it again. Verify schema and data.
 

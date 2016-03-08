@@ -15,7 +15,7 @@ Talk about and try:
 
 ### Build your image
 
-* Build your new image: `docker build -t dockerlab/db-service-java:part5 .`
+* Build your new image: `docker build -t findout/db-service-java:part5 .`
 
 ### Start Container from Custom Image, link to MySQL and start using property file
 

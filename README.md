@@ -37,7 +37,3 @@ Pull from Docker Hub.
 ## Part 7
 
 Docker Compose
-
-## Part 8
-
-Docker Cloud?

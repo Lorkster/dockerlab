@@ -16,7 +16,7 @@ Talk about and try:
 Create a custom Dockerfile based on `expertsystems/oracle-jdk8`
 
 * Base image on java layer: `FROM expertsystems/oracle-jdk8`.
-* Build your new image: `docker build -t dockerlab/oracle-jdk8:latest .`
+* Build your new image: `docker build -t findout/oracle-jdk8:latest .`
 
 ### Start Container from Custom Image
 
@@ -25,5 +25,5 @@ Create a custom Dockerfile based on `expertsystems/oracle-jdk8`
 * Take a look in your container: `docker exec -it dockerlab-jdk8 bash`.
 * `docker rm -f dockerlab-jdk8`
 * Start a container and execute a single command `docker run -i -t dockerlab/oracle-jdk8 java -version`.
-* Start a container and enter tty `docker run -i -t dockerlab/oracle-jdk8`.
+* Start a container and enter tty `docker run -i -t findout/oracle-jdk8`.
 * Verify that nothing is running `docker ps`.

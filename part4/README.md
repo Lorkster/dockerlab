@@ -32,7 +32,7 @@ Create a custom Dockerfile based on expertsystems/oracle-jdk8
 
 ### Start Container from Custom Image
 
-* `docker run -d dockerlab/db-service-java:part4`
+* `docker run -d findout/db-service-java:part4`
 * `docker ps` Container is running, but `docker logs container_id` will show errors.
 * `docker kill container_id` and contintue in Part 5. 
 
