@@ -20,5 +20,5 @@ Link with mysql from Part 2 and use a property file to start container.
 Push and pull using Docker Hub.
 7. [Part 7 - Really Tying it Together](/part7)
 Use Docker Compose to run the previously separate steps.
-
+8. [Bonus Content](https://docs.docker.com/docker-cloud/getting-started/)
 
